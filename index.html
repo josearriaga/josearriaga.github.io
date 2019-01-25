@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio</title>
+	<!-- css files -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+	<link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+	<meta name="author" content="Hassan Ali">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+	<body>
+		<!-- Navbar -->
+		<nav class="nav container void-background">
+			<!-- This "nav-menu" is hidden on mobile -->
+			<!-- Add the modifier "is-active" to display it on mobile -->
+			<div class="nav-left">
+				<a href="https://www.youtube.com/channel/UC5T868GGSuSLDtfnPpkIV-g?view_as=subscriber" class="nav-item">
+					<span class="icon">
+						<i class="fa fa-youtube-play"></i>
+					</span>
+				</a>
+				<a href="https://github.com/josearriaga" class="nav-item">
+					<span class="icon">
+						<i class="fa fa-github"></i>
+					</span>
+				</a>
+				<a href="https://ignuciousii.imgur.com/" class="nav-item">
+					<span class="icon">
+						<i class="fa fa-picture-o"></i>
+					</span>
+				</a>				
+			</div>
+
+			<div class="nav-right nav-menu">
+				<a class="nav-item" href="#about">About</a>
+				<a class="nav-item" href="#projects">Projects</a>
+				<a class="nav-item" href="#social">Social</a>
+			</div>
+
+			<!-- This "nav-toggle" hamburger menu is only visible on mobile -->
+			<!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
+			<span class="nav-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</span>
+		</nav>
+				
+		<!-- About Me -->
+		<section id="about" class="section section-1">
+			<div class="container has-text-centered">
+				<!-- Source: https://flic.kr/p/pAZBNK -->
+				<img class="avatar" src="assets/img/profile.png">
+			</div>
+        <div class="container">
+				<p class="intro">
+					Hi! What is something you are passionate about? I can tell you mine. My love and interest in technology is what pushes me further to continue studying this ever changing field because, as we all know, there is much still to learn. From a very young age I enjoy sitting in front of a computer (an old IBm PC running MS-DOS that had seen better days while the rest of the world was already on Windows XP) and I enjoy tinkering with electronics. Throughout high school I have participated in many competitions focused in the fields of Computer Science, CyberSecurity, and one in particular that required knowledge in Networking, Circuit Design, Parallel Processing, and so on. Overall I would say I am a jack of all trades because there is something fun about learning all there is.
+				</p>
+            </div>
+        </section>
+		
+		<!-- Projects -->
+		<section  id="projects" class="section section-2">
+			<div class="container">
+				<div class="has-text-centered">
+					<h3 class="title is-3">Projects</h3>
+				</div>
+				
+				<div class="columns is-multiline is-desktop">
+					<!-- Project 1 -->
+					<div class="column">
+						<div class="box project-text">
+							<article>
+								<div>
+									<figure class="image project-figure">
+										<img src="assets/img/picluster.jpg" alt="Image" class="picluster">
+									</figure>
+								</div>
+								<div>			
+									<p>
+										This Raspberry Pi cluster, which I named "Anton" after the fictional character Bertram Gilfoyle's server name, is a Beowulf-style cluster which has a main purpose of distributing work loads to any of the 16 mini computers. This project was the basis for our Creative Computer Project in the SkillsUSA competition. The underlying code base uses the mpi4py. As us computer scientists know, the message passing standard is, as the name states, a method of passing a message from point A to point B. To put it simply, MPI is a high level network programming abstraction. mpi4py takes this and and provides bindings of the message passing standard for the Python Programming language. More info on this topic can be found <a href="https://mpi4py.readthedocs.io/en/stable/overview.html">here</a> and <a href="https://thenewstack.io/installing-mpi-python-raspberry-pi-cluster-runs-docker/">here.</a>
+									</p>
+								</div>
+							</article>
+						</div>
+					</div>
+					<!-- Project 2 -->
+					<div class="column">
+						<div class="box project-text">
+							<article>
+								<div>
+									<figure class="image project-figure">
+										<img src="assets/img/flightcomputer.jpg" alt="Image" class="flightcomputerimg">
+									</figure>
+								</div>
+								<div>			
+									<p>
+										My current project is a scientific payload for a 1 pound 1 mile high rocket competition with the Tripoli Rocketry association. The purpose of this project is to use this flight computer to track flight data for the rocket that is installed in; such data would be x, y, z coordinates, temperature, and air pressure. I am continuing to work on this in my spare time whether that be during my Scientific Research and Design (Rocketry) class or in my off period. The software that this flight computer uses is the Adafruit Circuit Python modules which can be found <a href="https://learn.adafruit.com/lsm303-accelerometer-slash-compass-breakout/python-circuitpython">here.</a>
+
+									</p>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Social -->
+		<section id="social" class="section section-3">
+			<div class="container">
+				<div class="has-text-centered">					
+					<h3 class="title is-3">Let's Socialize</h3>
+				</div>
+				<div class="social-container columns">
+					<div class="column is-6 has-text-centered">
+						<a target="_blank" href="https://www.linkedin.com/in/jose-arriaga-94141817a/"><img class="linkedin" src="assets/img/linkedin.png"></a>
+					</div>
+					<div class="column is-6 has-text-centered">
+						<a target="_blank" href="mailto:arriagaj2019@gmail.com"><img class="" src="assets/img/gmailicon.png"></a>
+					</div>
+				</div>
+			</div>
+		</section>	
+		
+		<!-- Scripts  -->
+		<script src="controller.js"></script>		
+	</body>	
+</html>
